@@ -2,9 +2,7 @@
 
 
 //MATH BASICS
-
-//Sum
-export class X_Sum
+export class X_MathBasics
 {
     constructor(num1 = 0,num2 = 0,num3 = 0,num4 = 0,num5 = 0)
     {
@@ -14,6 +12,8 @@ export class X_Sum
         this.num4 = num4;
         this.num5 = num5;
     }
+
+    //SUM
     //add two numbers
     Sum2(){
         const result = parseInt(this.num1 + this.num2);
@@ -35,114 +35,76 @@ export class X_Sum
         return result;
     }
 
-}
-
-//Substraction
-export class X_Subtraction
-{
-    constructor(num1 = 0,num2 = 0,num3 = 0,num4 = 0,num5 = 0)
-    {
-        this.num1 = num1;
-        this.num2 = num2;
-        this.num3 = num3;
-        this.num4 = num4;
-        this.num5 = num5;
-    }
-    //add two numbers
+    //SUBSTRACTION
+    //substract two numbers
     Subs2(){
         const result = parseInt(this.num1 - this.num2);
         return result;
     }
-    //add three numbers
+    //substract three numbers
     Subs3(){
         const result = parseInt(this.num1 - this.num2 - this.num3);
         return result;
     }
-    //add four numbers
+    //substract four numbers
     Subs4(){
         const result = parseInt(this.num1 - this.num2 - this.num3 - this.num4);
         return result;
     }
-    //add five numbers
+    //substract five numbers
     Subs5(){
         const result = parseInt(this.num1 - this.num2 - this.num3 - this.num4 - this.num5);
         return result;
     }
 
-}
-
-//Multiplication
-export class X_Multiplication
-{
-    constructor(num1 = 0,num2 = 0,num3 = 0,num4 = 0,num5 = 0)
-    {
-        this.num1 = num1;
-        this.num2 = num2;
-        this.num3 = num3;
-        this.num4 = num4;
-        this.num5 = num5;
-    }
-    //add two numbers
+    //MULTIPLICATION
+    //multiplicate two numbers
     Multi2(){
         const result = parseInt(this.num1 * this.num2);
         return result;
     }
-    //add three numbers
+    //multiplicate three numbers
     Multi3(){
         const result = parseInt(this.num1 * this.num2 * this.num3);
         return result;
     }
-    //add four numbers
+    //multiplicate four numbers
     Multi4(){
         const result = parseInt(this.num1 * this.num2 * this.num3 * this.num4);
         return result;
     }
-    //add five numbers
+    //multiplicate five numbers
     Multi5(){
         const result = parseInt(this.num1 * this.num2 * this.num3 * this.num4 * this.num5);
         return result;
     }
 
-}
-
-//Division
-export class X_Division
-{
-    constructor(num1 = 0,num2 = 0,num3 = 0,num4 = 0,num5 = 0)
-    {
-        this.num1 = num1;
-        this.num2 = num2;
-        this.num3 = num3;
-        this.num4 = num4;
-        this.num5 = num5;
-    }
-    //add two numbers
+    //DIVISION
+    //divide two numbers
     Divi2(){
         const result = parseInt(this.num1 / this.num2);
         return result;
     }
-    //add three numbers
+    //divide three numbers
     Divi3(){
         const result = parseInt(this.num1 / this.num2 / this.num3);
         return result;
     }
-    //add four numbers
+    //divide four numbers
     Divi4(){
         const result = parseInt(this.num1 / this.num2 / this.num3 / this.num4);
         return result;
     }
-    //add five numbers
+    //divide five numbers
     Divi5(){
         const result = parseInt(this.num1 / this.num2 / this.num3 / this.num4 / this.num5);
         return result;
     }
-
 }
 
-//MATH BASICS (FLOAT)
 
-//Sum Float
-export class X_SumF
+//MATH BASICS (FLOAT)
+export class X_MathBasics
 {
     constructor(num1 = 0,num2 = 0,num3 = 0,num4 = 0,num5 = 0)
     {
@@ -152,6 +114,8 @@ export class X_SumF
         this.num4 = num4;
         this.num5 = num5;
     }
+
+    //SUM
     //add two numbers
     Sum2(){
         const result = parseFloat(this.num1 + this.num2);
@@ -173,109 +137,73 @@ export class X_SumF
         return result;
     }
 
-}
-
-//Substraction Float
-export class X_SubstractionF
-{
-    constructor(num1 = 0,num2 = 0,num3 = 0,num4 = 0,num5 = 0)
-    {
-        this.num1 = num1;
-        this.num2 = num2;
-        this.num3 = num3;
-        this.num4 = num4;
-        this.num5 = num5;
-    }
-    //add two numbers
+    //SUBSTRACTION
+    //substract two numbers
     Subs2(){
         const result = parseFloat(this.num1 - this.num2);
         return result;
     }
-    //add three numbers
+    //substract three numbers
     Subs3(){
         const result = parseFloat(this.num1 - this.num2 - this.num3);
         return result;
     }
-    //add four numbers
+    //substract four numbers
     Subs4(){
         const result = parseFloat(this.num1 - this.num2 - this.num3 - this.num4);
         return result;
     }
-    //add five numbers
+    //substract five numbers
     Subs5(){
         const result = parseFloat(this.num1 - this.num2 - this.num3 - this.num4 - this.num5);
         return result;
     }
 
-}
-
-//Multiplication Float
-export class X_MultiplicationF
-{
-    constructor(num1 = 0,num2 = 0,num3 = 0,num4 = 0,num5 = 0)
-    {
-        this.num1 = num1;
-        this.num2 = num2;
-        this.num3 = num3;
-        this.num4 = num4;
-        this.num5 = num5;
-    }
-    //add two numbers
+    //MULTIPLICATION
+    //multiplicate two numbers
     Multi2(){
         const result = parseFloat(this.num1 * this.num2);
         return result;
     }
-    //add three numbers
+    //multiplicate three numbers
     Multi3(){
         const result = parseFloat(this.num1 * this.num2 * this.num3);
         return result;
     }
-    //add four numbers
+    //multiplicate four numbers
     Multi4(){
         const result = parseFloat(this.num1 * this.num2 * this.num3 * this.num4);
         return result;
     }
-    //add five numbers
+    //multiplicate five numbers
     Multi5(){
         const result = parseFloat(this.num1 * this.num2 * this.num3 * this.num4 * this.num5);
         return result;
     }
 
-}
-
-//Division Float
-export class X_DivisionF
-{
-    constructor(num1 = 0,num2 = 0,num3 = 0,num4 = 0,num5 = 0)
-    {
-        this.num1 = num1;
-        this.num2 = num2;
-        this.num3 = num3;
-        this.num4 = num4;
-        this.num5 = num5;
-    }
-    //add two numbers
+    //DIVISION
+    //divide two numbers
     Divi2(){
         const result = parseFloat(this.num1 / this.num2);
         return result;
     }
-    //add three numbers
+    //divide three numbers
     Divi3(){
         const result = parseFloat(this.num1 / this.num2 / this.num3);
         return result;
     }
-    //add four numbers
+    //divide four numbers
     Divi4(){
         const result = parseFloat(this.num1 / this.num2 / this.num3 / this.num4);
         return result;
     }
-    //add five numbers
+    //divide five numbers
     Divi5(){
         const result = parseFloat(this.num1 / this.num2 / this.num3 / this.num4 / this.num5);
         return result;
     }
-
 }
+
 
 //ROOTS
 export class X_Root
