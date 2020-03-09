@@ -104,7 +104,7 @@ export class X_MathBasics
 
 
 //MATH BASICS (FLOAT)
-export class X_MathBasics
+export class X_MathBasicsF
 {
     constructor(num1 = 0,num2 = 0,num3 = 0,num4 = 0,num5 = 0)
     {
