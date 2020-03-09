@@ -1,0 +1,7 @@
+operaciones basicas 
+operaciones basicas flotantes
+raices
+formula cuadratica
+areas (cuadrado, circulo, rombo, triangulo)
+areas 3D
+
