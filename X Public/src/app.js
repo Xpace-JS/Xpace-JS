@@ -1,5 +1,4 @@
-import {X_MathBasics} from '../xpace';
+import {X_MathBasics,X_Circle,X_Root} from '../xpace';
 
-const suma = new X_MathBasics(2,4);
-let respuesta = suma.Sum3();
-console.log(respuesta);
+console.log("hello");
+

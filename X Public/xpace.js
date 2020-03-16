@@ -235,40 +235,167 @@ export class X_Root
     }
 }   
 
-//AREAS
-export class X_Area
+export class X_Square
 {
-    constructor(base,height,radius,DM,Dm) 
+    constructor(base = 0,height = 0)
     {
         this.base = base;
         this.height = height;
-        this.radius = radius;
-        this.DM = DM;
-        this.Dm = Dm;
     }
 
-    SquareArea()
+    area()
     {
-       const root = Math.pow(this.number,(1 / 2));
-       return root;
+        const area = this.base * this.height;
+        return area;
     }
 
-    CircleArea()
+    perimeter()
     {
-       const root = Math.pow(this.number,(1 / 3));
-       return root;
-    }
-
-    DiamondArea()
-    {
-        const root = Math.pow(this.number,(1 / 4));
-        return root;
-    }
-
-    TriangleArea()
-    {
-        const root = Math.pow(this.number,(1 / 5));
-        return root;
+        const perimeter = parseInt(this.base+this.base+this.height+this.height);
+        return perimeter;
     }
 }
 
+export class X_Circle
+{
+    constructor(radius = 0,diameter = 0)
+    {
+        this.radius = radius;
+        this.diameter = diameter;
+    }
+
+    areaR()
+    {
+        const pi = 3.14;
+        const area = (pi*Math.pow(this.radius,2));
+        return area;
+    }
+
+    areaD()
+    {
+        const pi = 3.14;
+        const radius = (this.perimeter/2);
+        const area = (pi * Math.pow(radius,2));
+        return area;
+    }
+
+    perimeterR()
+    {
+        const pi = 3.14;
+        const perimeter = (2 * pi * this.radius);
+        return perimeter;
+    }
+
+    perimeterD()
+    {
+        const pi = 3.14;
+        const radius = (this.diameter/2);
+        const perimeter = (2*pi*radius);
+        return perimeter;
+    }
+}
+
+export class X_Triangle
+{
+    constructor(base = 0,altura = 0,a = 0,b = 0,c = 0)
+    {
+        this.base = base;
+        this.height = height;
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
+
+    area()
+    {
+        const area = ((this.base*this.height)/2);
+        return area;
+    }
+
+    perimeter()
+    {
+        const perimeter = parseInt(this.a + this.b + this.c);
+        return perimeter;
+    }
+
+}
+
+export class X_Diamond
+{
+    constructor(d1 = 0,d2 = 0,a = 0,b = 0)
+    {
+        this.d1 = d1;
+        this.d2 = d2;
+        this.a = a;
+        this.b = b;
+    }
+
+    area()
+    {
+        const area=((this.d1 * this.d2)/2);
+        return area;
+    }
+
+    perimeter()
+    {
+        const perimeter = (2 * this.a)+(2 * this.b);
+        return perimeter;
+    }
+}
+
+export class X_Trapeze
+{
+    constructor(a = 0,b = 0,c = 0,d = 0)
+    {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.d = d;
+    }
+
+    area()
+    {
+        const area = (((this.a+this.b)/2)*2)
+        return area;
+    }
+
+    perimeter()
+    {
+        const perimeter= parseInt(this.a + this.b + this.c + this.d);
+        return perimeter;
+    }
+}
+
+export class X_Pentagon
+{
+    constructor(perimeter,apothem,a,b,c,d,e)
+    {
+        this.perimeter = perimeter;
+        this.apothem = apothem;
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.d = d;
+        this.e = e;
+    }
+
+    areaP()
+    {
+        const area= ((this.perimeter*this.apothem)/2);
+        return area; 
+    }
+
+    area()
+    {
+        let perimeter= parseInt(this.a + this.b + this.c+this.d + this.e);
+        const area = ((perimeter * this.apothem)/2);
+        return area;
+    }
+
+    perimeter()
+    {
+        const perimeter = parseInt(this.a + this.b + this.c+this.d + this.e);
+        return perimeter;
+    }
+
+}
