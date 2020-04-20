@@ -399,3 +399,109 @@ export class X_Pentagon
     }
 
 }
+
+export class X_cylinder
+{
+ constructor(height = 0, radius = 0)
+    {
+    this.height = height;
+    this.radius =  radius;
+    }
+ 
+ volume()
+ {
+    const pi = 3.14;
+    let volume = (pi * Math.pow(this.radius,2) * this.height);
+    return volume;
+ }
+ 
+}
+
+export class X_cone
+{
+    constructor(generatrix=0, height=0, radius=0)
+        {
+        this.generatrix = generatrix;
+        this.height = height;
+        this.radius = radius;    
+        }
+    
+    volume()
+    {
+        const pi = 3.14;
+        let volume = ((1/3) * pi * Math.pow(this.radius,2) * this.height);
+        return volume;
+    }    
+}
+
+export class X_sphere
+{
+    constructor(radius=0)
+    {
+        this.radius = radius;
+    }
+
+    volume()
+    {
+        const pi = 3.14;
+        let volume = ((4/3) * pi * Math.pow(this.radius,3));
+        return volume;
+    }
+}
+
+export class X_cube
+{
+    constructor(l1=0,l2=0,h=0)
+    {
+        l1 = this.l1;
+        l2 = this.l2;
+        h =  this.h;
+    }
+
+    volume()
+    {
+        let area = (this.l1 * this.l2);
+        let volume = area * this.h;
+        return volume;
+    }
+}
+
+//PROGRAMS
+//Templates of programs 
+
+export function X_Bonus(position, period) {
+    
+    const  position1 = 2500;
+    const  position2 = 1000;
+    const  position3 = 800;
+    let    bonus = 0;
+
+    switch (position) {
+        case 1:
+            if (period < 5 ) {
+              bonus = (position1 * 0.1);
+              return bonus;
+            }
+            if (period > 4 && period < 11 ) {
+                bonus = (position1 * 0.15);
+                return bonus;
+              }
+              if (period < 5 ) {
+                bonus = (position1 * 20);
+                return bonus;
+              }
+            break;
+            case 2:
+            
+                break;
+                case 3:
+            
+                    break;
+
+        default:
+            
+            break;
+    }
+
+}
+
