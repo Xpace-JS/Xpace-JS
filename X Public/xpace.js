@@ -470,7 +470,7 @@ export class X_cube
 //Templates of programs 
 
 export function X_Bonus(position, period) {
-    
+/*Programa que calcula el bono que se le asigna */        
     const  position1 = 2500;
     const  position2 = 1000;
     const  position3 = 800;
@@ -478,29 +478,51 @@ export function X_Bonus(position, period) {
 
     switch (position) {
         case 1:
-            if (period < 5 ) {
-              bonus = (position1 * 0.1);
-              return bonus;
-            }
-            if (period > 4 && period < 11 ) {
-                bonus = (position1 * 0.15);
+                if (period < 5 ) {
+                bonus = (position1 * 0.1);
                 return bonus;
-              }
-              if (period < 5 ) {
-                bonus = (position1 * 20);
-                return bonus;
-              }
-            break;
-            case 2:
-            
+                }
+                if (period > 4 && period < 11 ) {
+                    bonus = (position1 * 0.15);
+                    return bonus;
+                }
+                if (period < 5 ) {
+                    bonus = (position1 * 20);
+                    return bonus;
+                }
                 break;
-                case 3:
-            
-                    break;
+        case 2:
+                if (period < 5 ) {
+                bonus = (position2 * 0.1);
+                return bonus;
+                }
+                if (period > 4 && period < 11 ) {
+                onus = (position2 * 0.15);
+                return bonus;
+                }
+                if (period < 5 ) {
+                bonus = (position2 * 20);
+                return bonus;
+                }
+                break;
+        case 3:
+                if (period < 5 ) {
+                bonus = (position3 * 0.1);
+                return bonus;
+                }
+                if (period > 4 && period < 11 ) {
+                bonus = (position3 * 0.15);
+                return bonus;
+                }
+                if (period < 5 ) {
+                bonus = (position3 * 20);
+                return bonus;
+                }    
+                break;
 
         default:
-            
-            break;
+            bonus = 0;
+            return bonus;
     }
 
 }
