@@ -469,8 +469,12 @@ export class X_cube
 //PROGRAMS
 //Templates of programs 
 
-export function X_Bonus(position, period) {
-/*Programa que calcula el bono que se le asigna */        
+export function X_Bonus(position=0, period=0) {
+/*Programa que calcula el bono que le corresponde a cada empleado dependiendo de su posicion y de su periodo en la empresa.
+--Si el empleado lleva menos de 5 años en la empresa, recibe un bono del 10%
+--Si el empleado lleva entre 5 y 10 años, recibe un bono del 15%
+--Si el empleado lleva mas de 10 años en la empresa, recibe un bono del 20%*/     
+
     const  position1 = 2500;
     const  position2 = 1000;
     const  position3 = 800;
@@ -479,43 +483,43 @@ export function X_Bonus(position, period) {
     switch (position) {
         case 1:
                 if (period < 5 ) {
-                bonus = (position1 * 0.1);
+                bonus = parseFloat(position1 * 0.1);
                 return bonus;
                 }
                 if (period > 4 && period < 11 ) {
-                    bonus = (position1 * 0.15);
+                    bonus = parseFloat(position1 * 0.15);
                     return bonus;
                 }
-                if (period < 5 ) {
-                    bonus = (position1 * 20);
+                if (period > 10 ) {
+                    bonus = parseFloat(position1 * 20);
                     return bonus;
                 }
                 break;
         case 2:
                 if (period < 5 ) {
-                bonus = (position2 * 0.1);
+                bonus = parseFloat(position2 * 0.1);
                 return bonus;
                 }
                 if (period > 4 && period < 11 ) {
-                onus = (position2 * 0.15);
+                bonus = parseFloat(position2 * 0.15);
                 return bonus;
                 }
-                if (period < 5 ) {
-                bonus = (position2 * 20);
+                if (period > 10 ) {
+                bonus = parseFloat(position2 * 20);
                 return bonus;
                 }
                 break;
         case 3:
                 if (period < 5 ) {
-                bonus = (position3 * 0.1);
+                bonus = parseFloat(position3 * 0.1);
                 return bonus;
                 }
                 if (period > 4 && period < 11 ) {
-                bonus = (position3 * 0.15);
+                bonus = parseFloat(position3 * 0.15);
                 return bonus;
                 }
-                if (period < 5 ) {
-                bonus = (position3 * 20);
+                if (period > 10 ) {
+                bonus = parseFloat(position3 * 20);
                 return bonus;
                 }    
                 break;
