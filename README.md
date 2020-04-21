@@ -4,14 +4,14 @@ Libreria javascript que permite optimizar tiempo de trabajo
 ## Acerca de la libreria
 Xpace JS es una libreria con la que puedes optimizar tu tiempo de trabajo utilizando algunas plantillas de programas pre-creados basados en problemas reales para poder modificar y utilizar, simplemente importando clases y funciones en el archivo principal en el que estas trabajando tu codigo.
 <br>
-Xpace JS funciona con ECMASCRIPT 6 (ES6), Babel v7 y Webpack, lo cual le permite trabajar con modularidad, asi que es recomendable tener conocimientos previos de dichas tecnologias si no se esta ocupando ningun framework para el desarrollo de aplicaciones. <br>
+Esta libreria funciona con ECMASCRIPT 6 (ES6), Babel v7 y Webpack, lo cual le permite trabajar con modularidad, asi que es recomendable tener conocimientos previos de dichas tecnologias si no se esta ocupando ningun framework para el desarrollo de aplicaciones. <br>
 Si se esta utilizando alguna libreria o framework que permite utilizar modularidad sin problemas, simplemente es necesario importar el archivo xpace.js para comenzar a trabajar
 
 ## Como funciona?
 La mayoria de las ocasiones, los desarrolladores en periodos de desarrollo recurren a la creacion de clases y funciones para poder resolver los problemas planteados. Xpace JS se hace cargo de ese paso, proveyendo una diversa cantidad de clases y funciones pre-creadas modificables listas para importar en el archivo principal de desarrollo. <br>
 por ejemplo:  <br>
 
->**Problema:** Se dara una bonificacion a los empleados de una empresa dependiendo de su cargo y su periodo en la empresa.<br>
+>**Problema:** Se dara una bonificacion a los empleados de una empresa dependiendo de su cargo (primer cargo-$2500, segundo cargo-$1000, tercer cargo-$800) y su periodo en la empresa.(Si el empleado lleva menos de cinco años se le dara un bono del 10%, si lleva entre 5 y 10 años se le dara un bono del 15% y si lleva mas de 10 años se le dara un bono del 25%)<br>
 
 Para la solucion de este problema se puede optar por la siguiente:
 ```javascript
