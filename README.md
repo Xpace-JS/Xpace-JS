@@ -80,7 +80,17 @@ import {X_Bonus} from '../xpace';
 // 7 = años de permanencia en la empresa
  var bonificacion = X_Bonus(1,7);
  console.log(bonificacion);
- 
+
 ```
+## Como es posible esto?
+Simple, Xpace JS en su gran biblioteca tiene incluida una funcion ideal que cumple con los requisitos del problema anterior, pero... **Que tal si quiero cambiar variables o agregar mas codigo?**, No hay problema, Xpace JS es un software de codigo abierto, por lo que cualquier desarrollador tiene la libertad de modificar su codigo para que se adapte mejor a sus necesidades.
+
+# Como comenzar a utilizarlo?
+Si tu estas desarrollando una aplicacion web con algun framework que trabaje con modularidad y javascript, simplemente debes agregar entre todos los archivos a xpace.js y comenzar a importar las clases o funciones que necesitas utilizar para tu codigo. <br>
+Pero si tu no estas haciendo uso de ninguna libreria o framework de desarrollo, tendras que configurar tu entorno de desarrollo con babel y webpack para poder incorporar la modularidad en tu aplicacion, ya que aun existen navegadores aun no son capaces de reconocer ES6 de manera eficiente.
+
+# Que clase de problemas busca solucionar Xpace JS?
+
+
 
 
