@@ -91,7 +91,11 @@ Pero si tu no estas haciendo uso de ninguna libreria o framework de desarrollo, 
 
 # Que clase de problemas busca solucionar Xpace JS?
 <ul>
-<li>laksjd</li>
+<li>Formulas matematicas</li>
+<li>Algebra</li>
+<li>Matrices y Vectores</li>
+<li>Problemas cotidianos</li>
+<li>etc</li>
 </ul>
 
 
