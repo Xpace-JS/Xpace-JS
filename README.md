@@ -11,7 +11,7 @@ Si se esta utilizando alguna libreria o framework que permite utilizar modularid
 La mayoria de las ocasiones, los desarrolladores en periodos de desarrollo recurren a la creacion de clases y funciones para poder resolver los problemas planteados. Xpace JS se hace cargo de ese paso, proveyendo una diversa cantidad de clases y funciones pre-creadas modificables listas para importar en el archivo principal de desarrollo. <br>
 por ejemplo:  <br>
 
-**Problema:** Se dara una bonificacion a los empleados de una empresa dependiendo de su cargo y su periodo en la empresa.<br>
+>**Problema:** Se dara una bonificacion a los empleados de una empresa dependiendo de su cargo y su periodo en la empresa.<br>
 
 Para la solucion de este problema se puede optar por la siguiente:
 ```javascript
