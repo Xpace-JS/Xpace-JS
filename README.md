@@ -90,7 +90,9 @@ Si tu estas desarrollando una aplicacion web con algun framework que trabaje con
 Pero si tu no estas haciendo uso de ninguna libreria o framework de desarrollo, tendras que configurar tu entorno de desarrollo con babel y webpack para poder incorporar la modularidad en tu aplicacion, ya que aun existen navegadores aun no son capaces de reconocer ES6 de manera eficiente.
 
 # Que clase de problemas busca solucionar Xpace JS?
-
+<ul>
+<li>laksjd</li>
+</ul>
 
 
 
