@@ -235,6 +235,8 @@ export class X_Root
     }
 }   
 
+
+//Square
 export class X_Square
 {
     constructor(base = 0,height = 0)
@@ -256,6 +258,7 @@ export class X_Square
     }
 }
 
+//Circle
 export class X_Circle
 {
     constructor(radius = 0,diameter = 0)
@@ -295,6 +298,7 @@ export class X_Circle
     }
 }
 
+//Triangle
 export class X_Triangle
 {
     constructor(base = 0,altura = 0,a = 0,b = 0,c = 0)
@@ -320,6 +324,7 @@ export class X_Triangle
 
 }
 
+//Diamond
 export class X_Diamond
 {
     constructor(d1 = 0,d2 = 0,a = 0,b = 0)
@@ -343,6 +348,7 @@ export class X_Diamond
     }
 }
 
+//Trapeze
 export class X_Trapeze
 {
     constructor(a = 0,b = 0,c = 0,d = 0)
@@ -366,6 +372,7 @@ export class X_Trapeze
     }
 }
 
+//Pentagon
 export class X_Pentagon
 {
     constructor(perimeter,apothem,a,b,c,d,e)
@@ -400,6 +407,9 @@ export class X_Pentagon
 
 }
 
+    //3D Shapes
+
+//Cylinder
 export class X_cylinder
 {
  constructor(height = 0, radius = 0)
@@ -417,6 +427,7 @@ export class X_cylinder
  
 }
 
+//Cone
 export class X_cone
 {
     constructor(generatrix=0, height=0, radius=0)
@@ -434,6 +445,7 @@ export class X_cone
     }    
 }
 
+//Sphere
 export class X_sphere
 {
     constructor(radius=0)
@@ -449,6 +461,7 @@ export class X_sphere
     }
 }
 
+//Cube
 export class X_cube
 {
     constructor(l1=0,l2=0,h=0)
@@ -470,10 +483,10 @@ export class X_cube
 //Templates of programs 
 
 export function X_Bonus(position=0, period=0) {
-/*Programa que calcula el bono que le corresponde a cada empleado dependiendo de su posicion y de su periodo en la empresa.
---Si el empleado lleva menos de 5 años en la empresa, recibe un bono del 10%
---Si el empleado lleva entre 5 y 10 años, recibe un bono del 15%
---Si el empleado lleva mas de 10 años en la empresa, recibe un bono del 20%*/     
+/*Program that calculates the bonus that corresponds to each employee depending on their position and their period in the company.
+--If the person has been less than 5 years in the company, they receive a 10% bonus
+--If the person is between 5 and 10 years old, they receive a 15% bonus
+--If the person has been in the company for more than 10 years, they receive a 20% bonus*/     
 
     const  position1 = 2500;
     const  position2 = 1000;
@@ -524,7 +537,7 @@ export function X_Bonus(position=0, period=0) {
                 }    
                 break;
 
-        default:
+        default:    
             bonus = 0;
             return bonus;
     }
