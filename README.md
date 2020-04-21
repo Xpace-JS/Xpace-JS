@@ -34,7 +34,7 @@ Para la solucion de este problema se puede optar por la siguiente:
                     return bonus;
                 }
                 if (period > 10 ) {
-                    bonus = parseFloat(position1 * 20);
+                    bonus = parseFloat(position1 * 0.20);
                     return bonus;
                 }
                 break;
@@ -48,7 +48,7 @@ Para la solucion de este problema se puede optar por la siguiente:
                 return bonus;
                 }
                 if (period > 10 ) {
-                bonus = parseFloat(position2 * 20);
+                bonus = parseFloat(position2 * 0.20);
                 return bonus;
                 }
                 break;
@@ -62,7 +62,7 @@ Para la solucion de este problema se puede optar por la siguiente:
                 return bonus;
                 }
                 if (period > 10 ) {
-                bonus = parseFloat(position3 * 20);
+                bonus = parseFloat(position3 * 0.20);
                 return bonus;
                 }    
                 break;
@@ -76,7 +76,6 @@ Xpace JS provee una solucion mas sencilla:
 ```javascript
 
 import {X_Bonus} from '../xpace';
-
 // 1 = primer puesto (sueldo de $2500)
 // 7 = años de permanencia en la empresa
  var bonificacion = X_Bonus(1,7);

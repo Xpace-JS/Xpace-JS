@@ -504,7 +504,7 @@ export function X_Bonus(position=0, period=0) {
                     return bonus;
                 }
                 if (period > 10 ) {
-                    bonus = parseFloat(position1 * 20);
+                    bonus = parseFloat(position1 * 0.20);
                     return bonus;
                 }
                 break;
@@ -518,7 +518,7 @@ export function X_Bonus(position=0, period=0) {
                 return bonus;
                 }
                 if (period > 10 ) {
-                bonus = parseFloat(position2 * 20);
+                bonus = parseFloat(position2 * 0.20);
                 return bonus;
                 }
                 break;
@@ -532,7 +532,7 @@ export function X_Bonus(position=0, period=0) {
                 return bonus;
                 }
                 if (period > 10 ) {
-                bonus = parseFloat(position3 * 20);
+                bonus = parseFloat(position3 * 0.20);
                 return bonus;
                 }    
                 break;
